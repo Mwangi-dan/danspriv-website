@@ -123,7 +123,9 @@ body {
     max-width: 100%;
 }
 
-
+.btn {
+    margin-top: 2rem;
+}
 .btn button {
     padding: 1rem 2rem;
     border-radius: 2rem;
@@ -176,6 +178,7 @@ body {
     max-width: 100%;
 }
 
+
 .info .para p {
     margin-top: 2rem;
     width: 30rem;
@@ -211,6 +214,7 @@ body {
 
 .video {
     background-color: #f8f8f8;
+    padding: 2rem;
 }
 
 
@@ -226,7 +230,6 @@ body {
 }
 
 .video-ph img {
-    width: 30rem;
     max-width: 100%;
 }
 
@@ -243,6 +246,7 @@ body {
 }
 
 .content {
+    width: 30rem;
     max-width: 100%;
 }
 
@@ -261,15 +265,21 @@ body {
 .company-socials {
     display: flex;
     align-items: center;
-    gap: 28rem;
+    justify-content: center;
     color: #fff;
     justify-content: center;
-    margin: 1rem;
+    padding: 1rem;
+    margin: 0 auto;
 }
 
 .company-socials h3 {
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
 }
 
 .socials a {
@@ -620,13 +630,18 @@ body {
 }
 
 @media screen and (max-width: 640px) {
-    .text {
-        max-width: 100%;
+    .hero-content {
+        padding: 1rem;
     }
 
-    .title-text h1 {
-        font-size: 5rem;
+    .hero-content .text .title-text h1 {
+        font-size: 3rem;
     }
+
+    .hero-content .text {
+        flex-direction: column;
+    }
+
 
     .hero-para,
     .title-text {
@@ -683,11 +698,60 @@ body {
         font-size: 3rem;
     }
 
+    .content .comp-name {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar {
+        background-color: #000000;
+        opacity: 0.7;
+        gap: 0;
+    }
+
+    .navbar .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .menu {
+        display: grid;
+    }
+
+    .menu li {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .menu li a{
+        padding: 0.5rem 1rem;
+        color: #fff;
+    }
+
+    .menu li a:hover {
+        color: #ff9900;
+    }
+
+    .about-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
 
 }
 
 @media screen and (max-width: 340px) {
     .hero-content .text h1 {
         font-size: 3rem;
+    }
+
+    .hero-content .text {
+        width: 100%;
     }
 }
